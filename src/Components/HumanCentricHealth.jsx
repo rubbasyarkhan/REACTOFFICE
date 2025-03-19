@@ -32,19 +32,16 @@ const data = [
 
 const HumanCentricHealth = () => {
   return (
-    <section
-      className="relative flex mb-20 mt-10
-      flex-col md:flex-row py-10 justify-between items-start bg-contain bg-no-repeat bg-center"
-      style={{
-        opacity: 0.7,
-        backgroundImage: `url(${bgImage})`,
-      }}
-    >
-      <div>
-        <img src="" alt="" />
-      </div>
+    <section className="relative mb-40 flex flex-col md:flex-row h-screen justify-between items-start bg-contain bg-no-repeat bg-center">
+      <div
+        className="absolute inset-0 bg-contain bg-no-repeat bg-center opacity-50"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+        }}
+      ></div>
+
       {/* Left Text Section */}
-      <div className="ltext z-10 md:w-1/2 sticky top-20 px-20">
+      <div className="ltext md:w-1/2 sticky top-10 px-20">
         <p className="text-base leading-7 font-semibold font-[satoshi]">
           I craft seamless and engaging digital experiences, blending intuitive design with scalable development.
           Passionate about building user-centric solutions that enhance interactions, streamline workflows, and drive innovation.

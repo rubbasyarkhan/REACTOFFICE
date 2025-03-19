@@ -6,11 +6,11 @@ import HumanCentricHealth from '../Components/HumanCentricHealth'
 
 const Landing = () => {
     return (
-        <div>
+        <div className='flex flex-col gap-10'>
             <Header />
             <Hero />
             <HumanCentricHealth/>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
