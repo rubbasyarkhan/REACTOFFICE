@@ -1,7 +1,7 @@
 const landingPageData = {
     header: {
       subtitle: "Manage your finances with ease and confidence.",
-      logo: "RUBBAS", // Updated logo
+      logo: "Malissa", // Updated logo
     },
     hero: {
       title: "Fricken Good Designer And Creative Developer ",
@@ -9,7 +9,7 @@ const landingPageData = {
         "Track expenses, set budgets, and achieve your financial goals with FinanceGuru.",
       buttonText: "lets make something great",
       image:
-        "https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Updated hero image
+        "https://plus.unsplash.com/premium_photo-1664870883044-0d82e3d63d99?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Updated hero image
     },
     features: [
       {

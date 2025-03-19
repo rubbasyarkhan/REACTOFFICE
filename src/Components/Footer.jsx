@@ -3,7 +3,7 @@ import landingPageData from "../constant/WebData";
 
 const Footer = () => {
     return (
-        <footer className="w-full py-14">
+        <footer className="w-full py-14 h-screen">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto">
                     <div className="text-center gap-8 flex flex-col items-center">
