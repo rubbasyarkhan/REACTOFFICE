@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import landingPageData from "../constant/WebData";
 
 
 const Hero = () => {
+    const [first, setfirst] = useState("Rubbas khan")
+    const changeusername = () => setfirst("Rubbasyar khan");
     return (
         <section className="h-screen mt-10 ">
+            <h1 className='text-2xl px-10 font-bold text-yellow-600 '>{first}</h1>
             <div className="container mx-auto flex px-5  md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-5xl leading-tight text-3xl mb-4 font-medium ">
@@ -28,6 +31,17 @@ const Hero = () => {
                                 <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>
                         </button>
+                        <button onClick={changeusername} className="group inline-flex items-center justify-center border-1 border-gray-200 py-1 rounded hover:rounded-3xl w-[50%] font-semibold px-4 focus:outline-none text-center hover:bg-[#dadada] hover:text-black text-md mt-4 md:mt-0 transition-all duration-300" >update <svg
+                            fill="none"
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={1.5}
+                            className="w-8 h-8 ml-1 transform transition-all duration-300 group-hover:translate-x-4"
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg></button>
                     </div>
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

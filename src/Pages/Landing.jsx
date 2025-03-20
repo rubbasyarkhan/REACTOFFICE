@@ -3,6 +3,7 @@ import Header from '../Components/Header'
 import Hero from '../Components/Hero'
 import Footer from '../Components/Footer'
 import HumanCentricHealth from '../Components/HumanCentricHealth'
+import Finance from '../Components/Finance'
 
 const Landing = () => {
     return (
@@ -11,6 +12,7 @@ const Landing = () => {
             <Hero />
             <HumanCentricHealth/>
             <Footer />
+            <Finance/>
         </div>
     )
 }
