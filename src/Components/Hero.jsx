@@ -46,7 +46,7 @@ const Hero = () => {
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                     <img
-                        className="object-cover object-center  object-center rounded-[10%]"
+                        className="object-cover  object-center rounded-[10%]"
                         alt="hero"
                         src={landingPageData.hero.image}
                     />
