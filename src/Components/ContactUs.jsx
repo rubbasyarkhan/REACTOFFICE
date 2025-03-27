@@ -1,28 +1,31 @@
 import React, { useState } from 'react';
-
 const ContactUs = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        // emailll: '',
+        phone: '',
         message: ''
     });
 
     const handleChange = (e) => {
         setFormData({
             ...formData,
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value 
         });
     };
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Form Data:', formData);
+        const finalData = {
+            ...formData,
+            name: formData.name ? formData.name : "Unknown"
+        }
+        console.log('Form Data:', finalData);
     };
 
     return (
-        <div className="bg-[#EDE8D0] h-screen w-full flex items-center justify-center text-black">
+        <div className="bg-[#EDE8D0] h-screen w-full  text-black">
             <div className="p-6 w-full flex items-start justify-around shadow-lg rounded-2xl mt-10">
                 <div className='flex flex-col items-start w-1/2 justify-center'>
                     <h2 className="text-5xl font-extrabold text-gray-800 text-center mb-6">Contact Us</h2>
@@ -35,6 +38,17 @@ const ContactUs = () => {
                             type="text"
                             name="name"
                             value={formData.name}
+                            onChange={handleChange}
+                            placeholder="Your Name"
+                            className="w-[500px] p-3 border-b-2 border-gray-400  focus:border-black outline-none"
+                        />
+                    </div>
+                    <div>
+                        <label className="block text-gray-700 font-bold">Phone</label>
+                        <input
+                            type="number"
+                            name="phone"
+                            value={formData.phone}
                             onChange={handleChange}
                             placeholder="Your Name"
                             className="w-[500px] p-3 border-b-2 border-gray-400  focus:border-black outline-none"
